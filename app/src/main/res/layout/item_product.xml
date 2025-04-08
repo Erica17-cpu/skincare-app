@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!-- Product Image & Details (1/3 of the width) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="10dp">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/image_border"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!-- Add/Minus Buttons & Add to Cart (1/3 of the width) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <!-- Quantity Controls -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Minus Button -->
+            <ImageButton
+                android:id="@+id/buttonMinus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/white"
+                android:background="@drawable/button_border"
+                android:contentDescription="Delete Item"
+                android:src="@android:drawable/ic_menu_delete"
+                app:tint="@color/black"/>
+
+            <!-- Quantity Display -->
+            <TextView
+                android:id="@+id/productQuantity"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <!-- Add Button -->
+            <ImageButton
+                android:id="@+id/buttonAdd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/white"
+                android:contentDescription="Add item"
+                android:background="@drawable/button_border"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/black"/>
+        </LinearLayout>
+
+        <!-- Add to Cart Button Below -->
+        <Button
+            android:id="@+id/buttonAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Add to Cart"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

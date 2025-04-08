@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#5D9736</color>
+    <color name="sage">#809D3C</color>
+    <color name="nature">#A9C46C</color>
+    <color name="gradient">#F4FFC3</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="brown">#C16807</color>
+    <color name="gray">#D3D3D3</color>
+</resources>

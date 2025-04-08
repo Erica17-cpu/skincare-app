@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Spinner (Dropdown) for Selecting Product Category -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gradient"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:prompt="@string/spinner_hint"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:elevation="8dp"
+        android:translationZ="8dp"/>
+
+    <!-- RecyclerView for Displaying Products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/categorySpinner"
+        android:layout_above="@id/cartButton"
+        android:padding="4dp" />
+
+    <!-- Cart Button at Bottom Right -->
+    <ImageButton
+        android:id="@+id/cartButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:src="@drawable/ic_cart"
+        android:contentDescription="Cart"
+        android:padding="8dp"
+        android:elevation="8dp"/>
+</RelativeLayout>

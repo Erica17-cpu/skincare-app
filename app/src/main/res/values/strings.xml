@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SkinCare</string>
+    <string name="spinner_hint">Products</string>
+    <string-array name="product_categories">
+        <item>Select Product Category</item>
+        <item>Cleansers</item>
+        <item>Moisturizers</item>
+        <item>Toners</item>
+        <item>Sunscreens</item>
+    </string-array>
+
+</resources>
