@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
 
     //Import the Firebase BoM (Manages Firebase versions autmomatically)
     implementation(platform("com.google.firebase:firebase-bom:33.11.0"))

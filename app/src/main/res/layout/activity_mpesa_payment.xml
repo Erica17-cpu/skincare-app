@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Ensure the ID is correct here -->
+    <!-- TextView for showing the payment amount -->
     <TextView
         android:id="@+id/paymentAmountTextView"
         android:layout_width="wrap_content"
@@ -14,6 +14,7 @@
         android:textSize="18sp"
         android:layout_marginBottom="20dp" />
 
+    <!-- Button for proceeding with the payment -->
     <Button
         android:id="@+id/proceedPaymentButton"
         android:layout_width="match_parent"
