@@ -16,7 +16,7 @@
         <!-- ✅ Add your API key here -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBr0G9xxInGercRUWXUfFnIr8b7fenxv60">
+            android:value="maim">
 
         </meta-data>
         <!-- Activities -->
